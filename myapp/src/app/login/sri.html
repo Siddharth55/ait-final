@@ -1,0 +1,18 @@
+<div class="container">
+	<h2 style="text-align: center;margin:5%" >USER LOGIN</h2>
+	
+	<form>
+	  <div class="form-group">
+		<label for="usr">UserName:</label>
+		<input type="text" class="form-control" id="usr" name="username" [(ngModel)] = "user_nm">
+	  </div>
+	  <div class="form-group">
+		<label for="pwd">Password:</label>
+		<input type="password" class="form-control" id="pwd" name="password" [(ngModel)] = "pass">
+	  </div>
+	  <input type="submit" class="btn btn-success" (click)= "submitup()"onclick="alert('Logged in')">
+	</form>
+  </div>
+  <br>
+  <h2 style="margin:2%">Don't have an account</h2>
+  <button type ="button"class="btn btn-success"style="margin-left:5%" (click)="signup()">signup!</button>

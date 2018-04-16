@@ -1,0 +1,71 @@
+<div class="container" style="width:100%;margin:0;padding:7px;background:rgb(255, 255, 255,0.5)">
+<form method="get" enctype="application/x-www-form-urlencoded" action="/html/codes/html_form_handler.cfm">
+<h2>BOOK YOUR TICKETS</h2>
+  <p>
+  <label>Name
+  <input type="text" name="customer_name" required>
+  </label> 
+  </p>
+  
+  <p>
+  <label>Phone 
+  <input type="tel" name="phone_number">
+  </label>
+  </p>
+  
+  <p>
+  <label>Email 
+  <input type="email" name="email_address">
+  </label>
+  </p>
+  
+  <fieldset>
+  <legend>Select your movie</legend>
+  <p><label> <input type="radio" name="taxi" required value="car">Kabali </label></p>
+  <p><label> <input type="radio" name="taxi" required value="van">Bahubali</label></p>
+  <p><label> <input type="radio" name="taxi" required value="tuktuk">Padman </label></p>
+  </fieldset>
+  
+  <fieldset>
+  <legend>Extras</legend>
+  <p><label> <input type="checkbox" name="extras" value="baby"> Baby Seat </label></p>
+  <p><label> <input type="checkbox" name="extras" value="wheelchair"> Wheelchair Access </label></p>
+  <p><label> <input type="checkbox" name="extras" value="tip"> Stock Tip </label></p>
+  </fieldset>
+  <fieldset>
+    <legend>Extras</legend>
+    <p><label> <input type="checkbox" name="extras" value="baby"> nachos with coke </label></p>
+    <p><label> <input type="checkbox" name="extras" value="wheelchair"> popcorn </label></p>
+    <p><label> <input type="checkbox" name="extras" value="tip"> burger with coke </label></p>
+    <p><label> <input type="checkbox" name="extras" value="tip"> pizzas </label></p>
+
+    </fieldset>
+  <fieldset>
+  <p>
+  <label>Movie Date/Time
+  <input type="datetime-local" name="pickup_time" required>
+  </label>
+  </p>
+    </fieldset>
+
+
+  <p>
+  <label>Seatlevel                                            
+  <select id="pickup_place" name="pickup_place">
+  <option value="" selected="selected">Select One</option>
+  <option value="office" >High RS300/-</option>
+  <option value="town_hall" >medium RS200/-</option>
+  <option value="telepathy" >Low RS150/-</option>
+  </select>
+  </label> 
+  </p>
+  
+  
+  
+  
+  
+  
+  
+  <button type ="button"class="btn btn-success"style="margin-left:%" (click)="payment()"onclick="alert('tickets booked')">Submit Booking!</button>
+  </form>
+  </div>
